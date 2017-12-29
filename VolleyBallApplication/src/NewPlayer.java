@@ -64,20 +64,24 @@ public class NewPlayer extends JFrame {
                 dateT = date.getText();
 
                 if (correctDate()) {
-                    
-                    if(name.getText() != null){
+
+                    if (name.getText() != null) {
                         nameT = name.getText();
-                    } else nameT = "";
-                    
-                    if(date.getText() != null){
+                    }
+                    else
+                        nameT = "";
+
+                    if (date.getText() != null) {
                         dateT = date.getText();
-                    } else dateT = "";
-                    
-                    if(oTeam.getText() != null){
+                    }
+                    else
+                        dateT = "";
+
+                    if (oTeam.getText() != null) {
                         gameT = oTeam.getText();
-                    } else gameT = "";
-                    
-                    
+                    }
+                    else
+                        gameT = "";
 
                     StatisticsPage statisticsFrame = new StatisticsPage();
 
